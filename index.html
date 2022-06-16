@@ -40,20 +40,21 @@
                     </div>
                     <div id="pass">
                         <label for="pass">Password</label>
-                        <input type="password" name="pass">
+                        <input class="pword" type="password" name="pass" required>
                     </div>
                     <div id="confirm">
                         <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm">
+                        <input class="pword" type="password" name="confirm" required>
                     </div>
                 </div>
             </div>
             <div id="login">
-                <button id="login-butt">Create Account</button>
+                <button id="login-butt" onclick="validate()">Create Account</button>
                 <div id="login-text">Already have an account? 
                     <a href="#">Log in!</a>
                 </div>
             </div>
         </div>
     </body>
+    <script src="script.js"></script>
 </html>
