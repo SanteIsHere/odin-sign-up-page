@@ -11,6 +11,11 @@
     src: url("fonts/Norse-Bold.otf");
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     /* Reset body */
     margin: 0;
@@ -21,7 +26,7 @@ body {
 #left-banner {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 25vw;
 }
 
@@ -46,6 +51,9 @@ body {
 the logo background div */
 #logo-bg * {
     height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* "ODIN" */
@@ -59,7 +67,7 @@ the logo background div */
 }
 
 #inner-text {
-    font-size: 100px;
+    font-size: 80px;
 }
 
 #connect-sect {
@@ -68,7 +76,7 @@ the logo background div */
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 80vw;
+    width: 100vw;
     justify-content: center;
 }
 
