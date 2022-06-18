@@ -30,7 +30,6 @@ body {
 #left-banner {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid; */
     width: var(--banner-width);
 }
 
@@ -135,7 +134,10 @@ input :focus {
 }
 
 #header {
-    margin-left: 25px;
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 #login {
