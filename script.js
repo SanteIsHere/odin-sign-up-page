@@ -1,4 +1,5 @@
 let passFields = document.querySelectorAll(".pword")
+let inputs = document.querySelectorAll("input")
 passFields.forEach((f) => {f.setCustomValidity("Passwords must match!")})
 let passFieldsArray = Array.from(passFields)
 const registerButt = document.getElementById("login-butt")
@@ -10,6 +11,11 @@ const validate = function() {
     } else {
         console.log("Passwords equal")
     }
+    
+    if (Array.from(inputs).every((inp) => {if (inp.value === "") {return true}})) {
+        inputs.forEach((inp) => {inp.reportValidity()})
+    }
+
 }
 
 registerButt.addEventListener("click", validate)
