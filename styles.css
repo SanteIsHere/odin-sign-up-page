@@ -31,12 +31,12 @@ body {
     display: flex;
     flex-direction: column;
     width: var(--banner-width);
+    height: 100%;
 }
 
-
-#banner-img {
-    height: 105vh;
-}
+/* #banner-img {
+    height: 100vh
+} */
 
 #logo-bg {
     position: absolute;
@@ -96,7 +96,6 @@ the logo background div */
 /* Input section */
 #fields {
     gap: 10px 60px;
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -136,24 +135,27 @@ input :focus {
 
 #header {
     display: flex;
-    margin: 25px;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 
 #login {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 20px;
     height: fit-content;
+    border: 1px solid black;
+}
+
+#login-butt-cont {
+    position: absolute;
+    top: 105%;
 }
 
 #login-butt {
-    margin-left: 10px;
     padding: 7px 35px;
     border-radius: 7px;
-    align-self: flex-start;
     background-color: var(--btn-color);
     color: white;
 }
