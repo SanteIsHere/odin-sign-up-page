@@ -9,8 +9,8 @@
 
 /* Import external (downloaded) font */
 @font-face {
-    font-family: Norse-Bold;
-    src: url("fonts/Norse-Bold.otf");
+    font-family: Terminus;
+    src: url("fonts/Terminess\ \(TTF\)\ Nerd\ Font\ Complete.ttf");
 }
 
 html {
@@ -65,7 +65,7 @@ the logo background div */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: Norse-Bold;
+    font-family: Terminus;
 }
 
 /* "ODIN" */
@@ -77,11 +77,12 @@ the logo background div */
 #credit {
     color: white;
     position: absolute;
-    top: 120%;
+    top: 125%;
     gap: 5px;
     display: flex;
     justify-content: center;
     width: var(--banner-width);
+    font-size: small;
 }
 
 /* Form content, heading, button */
