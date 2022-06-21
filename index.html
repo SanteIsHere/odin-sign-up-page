@@ -20,30 +20,34 @@
         </div>
         <div id="connect-sect">
             <div id="header">
-                <h2>
+                <h3>
                     This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
                     Sign up <span style="font-style: italic">now</span> to get started. <br><br>
                     You <span style="font-style: italic">know</span> you want to.
-                    </h2>
+                </h3>
             </div>
             <div id="form-cont">
                 <h3 id="form-header">Let's do this!</h3>
                 <form method="post" action="#" id="fields">
                     <div id="first">
                         <label for="first">First Name</label>
-                        <input type="text" name="first" required>
+                        <input type="text" name="first"
+                         pattern="^[A-Z][a-z]+$" placeholder="John" required>
                     </div>
                     <div id="last">
                         <label for="last">Last Name</label>
-                        <input type="text" name="last" required>
+                        <input type="text" name="last"
+                        placeholder="Doe" pattern="^[A-Z][a-z]+$" required>
                     </div>
                     <div id="email">
                         <label for="email">Email</label>
-                        <input type="text" name="email" required>
+                        <input type="text" name="email"
+                        placeholder="example@email.com" required>
                     </div>
                     <div id="phone">
                         <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" required>
+                        <input type="text" name="phone"
+                        placeholder="(123)-456-7890 or 123-456-7890" pattern="^\(*\d{3}\)*-\d{3}-\d{4}$" required>
                     </div>
                     <div id="pass">
                         <label for="pass">Password</label>
@@ -51,7 +55,7 @@
                     </div>
                     <div id="confirm">
                         <label for="confirm">Confirm Password</label>
-                        <input class="pword" type="password" name="confirm" required>
+                        <input class="conf-pword" type="password" name="confirm" required>
                     </div>
                     <div id="login-butt-cont">
                         <button id="login-butt">Create Account</button>

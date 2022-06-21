@@ -1,17 +1,18 @@
-// let passFields = document.querySelectorAll(".pword")
-// let inputs = document.querySelectorAll("input")
-// passFields.forEach((f) => {f.setCustomValidity("Passwords must match!")})
-// let passFieldsArray = Array.from(passFields)
-// const registerButt = document.getElementById("login-butt")
+let pass = document.querySelector(".pword")
+let conf = document.querySelector(".conf-pword")
+const registerButt = document.getElementById("login-butt")
 
-// const validate = function() {
-//     if (!(passFieldsArray.every((field) => {if (field.value === passFieldsArray[0].value) {return true}}))) {
-//         console.log("Passwords are not equal!")
-//         passFields.forEach((f) => {f.reportValidity()})
-//     } else {
-//         console.log("Passwords equal")
-//     }
-// }
+const validate = function() {
+    if (!(conf.value) && pass.value) {
+        conf.setCustomValidity("*Passwords must match!")
+    }
+    if (conf.value != pass.value) {
+        console.log(`Confirm Password text: ${conf.value} | Password text: ${pass.value}`)
+        conf.reportValidity()
+    } else {
+        conf.setCustomValidity("")
+    }
+}
 
-// registerButt.addEventListener("click", validate)
+registerButt.addEventListener("click", validate)
 
